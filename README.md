@@ -8,3 +8,5 @@ https://github.com/espressif/esp-dl
 https://blog.tensorflow.org/2020/08/announcing-tensorflow-lite-micro-esp32.html
 
 https://github.com/espressif/esp-tflite-micro
+
+https://www.tensorflow.org/lite/microcontrollers?hl=zh-tw
