@@ -21,23 +21,50 @@ ESP-WHO 的所有示例都存放在 examples 中。該文件夾架構如下所�
 
 
 ```
-├── examples
-│   ├── cat_face_detection          // 貓臉檢測示例
-│   │   ├── lcd                     // 結果顯示方式為 LCD 屏
-│   │   └── terminal                // 結果顯示方式為終端
-│   ├── code_recognition            // 一維碼/二維碼識別示例
-│   ├── human_face_detection        // 人臉檢測示例
-│   │   ├── lcd
-│   │   └── terminal
-│   ├── human_face_recognition      // 人臉識別示例
-│   │   ├── lcd
-│   │   ├── terminal
-│   │   └── README.md               // 示例的具體說明
-│   └── motion_detection            // 移動偵測示例
-│       ├── lcd 
-│       ├── terminal
-│       ├── web
-│       └── README.rst
+examples/
+├── cat_face_detection  // 貓臉檢測示例
+│   ├── lcd             // 結果顯示方式為 LCD 屏
+│   ├── README.rst
+│   ├── terminal        // 結果顯示方式為終端
+│   └── web
+├── code_recognition    // 一維碼/二維碼識別示例
+│   ├── CMakeLists.txt
+│   ├── main
+│   ├── README.md
+│   ├── sdkconfig.defaults
+│   ├── sdkconfig.defaults.esp32
+│   ├── sdkconfig.defaults.esp32s2
+│   └── sdkconfig.defaults.esp32s3
+├── color_detection
+│   ├── lcd
+│   ├── README_CN.md
+│   └── README.md
+├── esp32-s3-eye             // 出廠示例
+│   ├── build
+│   ├── CMakeLists.txt
+│   ├── dependencies.lock
+│   ├── main
+│   ├── managed_components
+│   ├── partitions.csv
+│   ├── README_CN.md
+│   ├── README.md
+│   ├── sdkconfig
+│   └── sdkconfig.defaults
+├── human_face_detection     // 人臉檢測示例
+│   ├── lcd
+│   ├── README.rst
+│   ├── terminal
+│   └── web
+├── human_face_recognition   // 人臉識別示例
+│   ├── lcd
+│   ├── README_CN.md
+│   ├── README.md            // 示例的具體說明
+│   └── terminal
+└── motion_detection         // 移動偵測示例
+    ├── lcd
+    ├── README.rst
+    ├── terminal
+    └── web
 ```
               
 #### 步驟 1：設定目標芯片
