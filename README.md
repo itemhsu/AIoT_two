@@ -151,7 +151,10 @@ idf.py build
 esptool.py --chip esp32s3 -p /dev/tty.usbmodem11301 -b 460800 --before default_reset --after hard_reset write_flash --flash_mode dio --flash_size 8MB --flash_freq 80m 0x0 bootloader.bin 0x8000 partition-table.bin 0x10000 esp32-s3-eye.bin 0x3f8000 srmodels.bin
 ```
 
-
+#### 免編譯回復
+```
+esptool.py --chip ESP32-S3 -p /dev/tty.usbmodem11301 --baud 460800 write_flash -z 0x0 esp32-s3-eye-v2.2-firmware-v0.2.0-en.bin
+```
 
 
 ## Reference
