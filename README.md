@@ -107,8 +107,22 @@ I (18830) motion_detection: Something moved!
 
 
 
-
-
+#### 回復
+* 使用example/esp32-s3-eye
+```
+cd esp32-s3-eye/
+idf.py set-target esp32s3
+idf.py build
+```
+* download 4 files
+  * bootloader.bin
+  * partition-table.bin
+  * esp32-s3-eye.bin
+  * srmodels.bin
+* 燒錄
+```
+esptool.py --chip esp32s3 -p /dev/tty.usbmodem11301 -b 460800 --before default_reset --after hard_reset write_flash --flash_mode dio --flash_size 8MB --flash_freq 80m 0x0 bootloader.bin 0x8000 partition-table.bin 0x10000 esp32-s3-eye.bin 0x3f8000 srmodels.bin
+```
 
 
 
