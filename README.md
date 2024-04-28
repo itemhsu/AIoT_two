@@ -6,9 +6,6 @@ ESP-WHO 提供了如人臉檢測、人臉識別、貓臉檢測和手勢識別等
 * ESP-IDF
 * ESP-DL https://github.com/espressif/esp-dl 為 ESP-WHO 提供了豐富的深度學習相關接口，配合各種外設可以實現許多有趣的應用。
 
-<p align="center">
-    <img width="%" src="./img/architecture_cn.drawio.svg"> 
-</p>
 ### 軟件准備
 #### 獲取 ESP-IDF
 * 請確你的路徑有設定好，可以執行idf.py
